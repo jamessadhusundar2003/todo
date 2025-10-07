@@ -138,10 +138,10 @@ main section {
     align-items: center;
 
     background-color: rgb(189, 189, 189);
-    width: 365px;
+    width: 370px;
     margin-top: 2px;
     margin-bottom: 2px;
-    padding: 10px 15px;
+    padding: 10px 12px;
     border-radius: 20px;
 }
 
@@ -211,10 +211,10 @@ footer p {
     }
 
     .list-span {
-        width: 260px;
+        width: 265px;
         margin-top: 2px;
         margin-bottom: 2px;
-        padding: 8px 12px;
+        padding: 8px;
     }
     
     footer p {
