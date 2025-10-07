@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Sadhu Sundar">
+    <title>ToDo</title>
+
+    <link rel="icon" href="images/wolf-purple.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="theme-button" onclick="toggleTheme()">DARK</button>
+    </header>
+    <main>
+        <section>
+            <div class="title">
+                <h2>TODO</h2>
+                <img src="images/wolf-purple.png" alt="App Icon">
+            </div>
+            <div class="text-field">
+                <input type="text" placeholder="Add something before you forget" maxlength="40" class="todo-text-field">
+                <button onclick="add()">Add</button>
+            </div>
+            <div class="todo-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>"If you do what is right, will you not be accepted?" - I am</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

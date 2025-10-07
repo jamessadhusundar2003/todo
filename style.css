@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100vh;
+
+    background-image: linear-gradient(315deg, #CE9FFC 10%, #7367F0 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* --DARK THEME-- */
+
+.dark-theme {
+    background-image: linear-gradient(315deg, #4b3b5b 10%, #28226e 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dark-theme-section {
+    background-color: rgb(177, 177, 177);
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+header button {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: black;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    width: 400px;
+    min-height: 120px;
+    margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.title h2 {
+    font-size: 35px;
+}
+
+.title img {
+    height: 45px;
+    width: 45px;
+}
+
+.text-field {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.text-field input {
+    color: rgb(69, 69, 69);
+    font-weight: bold;
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* --ADD BUTTON-- */
+
+.text-field button {
+    background-color: #7367F0;
+    color: white;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.text-field button:hover {
+    background-color: #5f55c4;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 380px;
+    padding: 10px;
+    border-radius: 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+}
+
+.list-span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(189, 189, 189);
+    width: 365px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+/* --CHECKBOX-- */
+
+.list-span input {
+    accent-color: #7367F0;
+    height: 18px;
+    width: 18px;
+    border-radius: 6px;
+}
+
+.list-span p {
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+/* --DELETE BUTTON-- */
+
+.list-span button {
+    background-color: #7367F0;
+    color: white;
+    height: 35px;
+    width: 60px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list-span button:hover {
+    background-color: #5f55c4;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+@media (max-width : 900px) {
+    header {
+        width: 95%;
+    }
+
+    main section {
+        width: 285px;
+        min-height: 300px;
+        margin-bottom: 70px;
+        padding: 25px;
+    }
+
+    .text-field input {
+        font-size: 12px;
+        width: 200px;
+        padding: 3px;
+        padding-left: 10px;
+    }
+
+    .list-span {
+        width: 260px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 8px 12px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+}
