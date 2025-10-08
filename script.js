@@ -3,9 +3,11 @@ alert("This site works best on PC and may not display well on mobile devices.");
 function toggleTheme() {
     if (document.querySelector(".theme-button").innerText === "DARK") {
         document.body.classList.add("dark-theme");
+        document.querySelector("#section").classList.add("dark-theme-section");
         document.querySelector(".theme-button").innerText = "LIGHT";
     } else {
         document.body.classList.remove("dark-theme");
+        document.querySelector("#section").classList.remove("dark-theme-section");
         document.querySelector(".theme-button").innerText = "DARK";
     }
 }
