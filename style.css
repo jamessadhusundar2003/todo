@@ -65,6 +65,13 @@ main section {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+/* --DARK THEME FOR SECTION-- */
+
+.dark-theme-section {
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
 .title {
     display: flex;
     justify-content: space-between;
@@ -192,8 +199,12 @@ footer p {
 }
 
 @media (max-width : 900px) {
+    body {
+        height: 90vh;
+    }
+    
     header {
-        width: 95%;
+        width: 98%;
     }
 
     main section {
